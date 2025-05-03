@@ -1,34 +1,40 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react'
+import './../src/App.css'
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import HomePage from './Pages/HomePage'
+import LoginPage from './Pages/LoginPage'
+import CheckOut from './Pages/CheckOut'
+import ContactUsPage from './Pages/ContactUsPage'
+import FaqPage from './Pages/FaqPage'
+import MobilesPage from './Pages/MobilesPage'
+import OrderTackingPage from './Pages/OrderTrackingPage'
+import PrivacyPolicyPage from './Pages/PrivacyPolicyPage'
+import ProductDesc from './Pages/ProductDesc'
+import ReturnsPage from './Pages/ReturnsPage'
+import SignupPage from './Pages/SignupPage'
+import TermsAndConditionPage from './Pages/TermsAndConditionPage'
+import WishListPage from './Pages/WishListPage'
 
-function App() {
-  const [count, setCount] = useState(0)
 
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<LoginPage />} />
+        <Route path='/home' element={<HomePage/>}/>
+        <Route path='/checkout' element={<CheckOut/>}/>
+        <Route path='/contact' element={<ContactUsPage/>}/>
+        <Route path='/faq' element={<FaqPage/>}/>
+        <Route path='/mobiles' element={<MobilesPage/>}/>
+        <Route path='/ordertracking' element={<OrderTackingPage/>}/>
+        <Route path='/privacypolicy' element={<PrivacyPolicyPage/>}/>
+        <Route path='/productdesc' element={<ProductDesc/>}/>
+        <Route path='/returns' element={<ReturnsPage/>}/>
+        <Route path='/signup' element={<SignupPage/>}/>
+        <Route path='/termsandcondition' element={<TermsAndConditionPage/>}/>
+        <Route path='/wishlist' element={<WishListPage/>}/>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
