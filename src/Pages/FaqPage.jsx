@@ -6,9 +6,7 @@ import Footer from "../Components/Footer";
 const FaqPage = () => {
   return (
     <div className="bg-blue-100">
-      <NavBar />
       <FAQ />
-      <Footer />
     </div>
   );
 };

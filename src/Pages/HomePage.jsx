@@ -6,12 +6,10 @@ import ProductCard from "../Components/ProductCard";
 import Banner from "../Components/Banner";
 import Footer from "../Components/Footer";
 
-const HomePage = () => {
-
-
+const HomePage = (props) => {
+    console.log(props.productdata);
     return (
         <div>
-            <NavBar />
             <HeroSection />
             <IconCards />
             <div className="mx-auto p-12 font-bold text-2xl">
@@ -84,7 +82,7 @@ const HomePage = () => {
             </div>
             <Banner />
             <IconCards />
-            <Footer />
+
         </div>
     );
 };

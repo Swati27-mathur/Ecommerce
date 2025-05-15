@@ -6,9 +6,9 @@ import Footer from "../Components/Footer";
 const ReturnsPage = () => {
   return (
     <div className="bg-blue-100">
-      <NavBar />
+      
       <Returns />
-      <Footer />
+      
     </div>
   );
 };

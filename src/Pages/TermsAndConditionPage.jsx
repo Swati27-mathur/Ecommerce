@@ -5,7 +5,7 @@ import Footer from "../Components/Footer";
 const TermsAndConditionPage = () => {
   return (
     <div className="bg-blue-100">
-      <NavBar />
+      
       <section className="max-w-4xl mx-auto px-4 py-12">
         <h1 className="text-3xl font-bold mb-6 text-center text-blue-600">
           Terms and Conditions
@@ -94,7 +94,7 @@ const TermsAndConditionPage = () => {
           </p>
         </div>
       </section>
-      <Footer />
+     
     </div>
   );
 };

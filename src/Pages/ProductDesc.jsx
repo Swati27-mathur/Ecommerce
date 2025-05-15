@@ -6,9 +6,9 @@ import Footer from "../Components/Footer";
 const ProductDesc = () => {
   return (
     <div>
-      <NavBar />
+     
       <ProductDesign />
-      <Footer />
+      
     </div>
   );
 };
